@@ -1,10 +1,13 @@
 import React,{useState} from 'react';
+import {HeaderMenu} from '../style/layout_sty'
 
 function Header(){
     return(
         <>
             <div>
-                Header
+                <HeaderMenu>
+                    1545
+                </HeaderMenu>
             </div>
         </>
     );
