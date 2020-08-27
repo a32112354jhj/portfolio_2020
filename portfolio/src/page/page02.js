@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 
-export const Page02 = () => {
-  return 
-  <>
-    <div>
+function Page02() {
+  return (
+    <>
+      <div>
         <p>page02</p>
-    </div>
-  </>
-};
+      </div>
+    </>
+  );
+}
+
+export default Page02;
