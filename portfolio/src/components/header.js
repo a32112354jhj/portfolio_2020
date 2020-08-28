@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {HeaderMenu} from '../style/layout_sty';
-import {Link} from 'react-router-dom';
+import {Link,NavLink} from 'react-router-dom';
 
 function Header(){
     return(
@@ -9,13 +9,14 @@ function Header(){
                 <HeaderMenu>
                     <ul>
                         <li>
-                            <Link to="/Page01">1</Link>
+                            <NavLink  exact={true} activeClassName="act" to="/Page01">1</NavLink >
                         </li>
-
                         <li>
-                            <Link to="/Page02">2</Link>
+                            <NavLink  activeClassName="act" to="/Page02">2</NavLink >
                         </li>
-
+                        <li>
+                            <NavLink  activeClassName="act" to="/Page03">3</NavLink >
+                        </li>
                     </ul>
                 </HeaderMenu>
             </div>
